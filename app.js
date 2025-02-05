@@ -8,9 +8,10 @@ var mongoose = require("mongoose");
 let helmet = require("helmet");
 var cors = require("cors");
 var appRoutes = require("./app_backend/routes/v1/app.route");
-const env = process.env.DEVELOPMENT_CONNECTION_STRING;
+const env =
+	"mongodb+srv://cyberfuse123:FLXAyMRzA5gKZdX9@cluster0.pibic0r.mongodb.net/nephro-health-coach";
 	
-	var port = process.env.PORT || '3002'
+	var port = 8082;
 	
 mongoose
 	.connect(env, {
